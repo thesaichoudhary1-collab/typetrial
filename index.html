@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TypeTrial — typing speed test</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>TypeTrial</h1>
+  <p class="sub">Type the line below. We'll clock your speed and accuracy as you go.</p>
+
+  <div class="modes">
+    <button id="mode-quick" class="active">Quick line</button>
+    <button id="mode-sprint">60s sprint</button>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="num" id="stat-wpm">0</div><div class="label">WPM</div></div>
+    <div class="stat"><div class="num" id="stat-acc">100%</div><div class="label">Accuracy</div></div>
+    <div class="stat"><div class="num" id="stat-time">0:00</div><div class="label" id="time-label">Elapsed</div></div>
+  </div>
+
+  <div class="card" id="card">
+    <div class="sentence" id="sentence"></div>
+    <input class="real-input" id="real-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Typing test input">
+  </div>
+  <p class="hint" id="hint">Click the box above and start typing — the timer starts on your first keystroke.</p>
+
+  <div class="footer-row">
+    <button class="btn" id="restart-btn">New line</button>
+    <div class="result" id="result"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
