@@ -4,6 +4,20 @@ A lightweight, interactive typing speed test built with vanilla HTML, CSS, and J
 
 **Live demo:** https://thesaichoudhary1-collab.github.io/typetrial/
 
+## Demo
+
+**Live keystroke feedback** — correct letters turn green, mistakes turn red:
+
+![Typing in progress](demo-typing.png)
+
+**Finishing a line:**
+
+![Completed line](demo-result.png)
+
+**60-second sprint mode:**
+
+![Sprint mode finish](demo-finish.png)
+
 ## What it does
 
 TypeTrial shows a line of text and measures how fast and accurately you can type it. The timer starts automatically on your first keystroke, and every character you type is scored in real time: green for correct, red for incorrect, with a blinking caret marking your current position.
